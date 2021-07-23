@@ -3,11 +3,11 @@
 #include "Adafruit_MQTT_Client.h"
 
 #define AIO_SERVER "io.adafruit.com"
-#define AIO_SERVERPORT 1883
-#define AIO_KEY "83a5fe4cf4fb49a683c48695b22b4cd8"
-#define AIO_USERNAME "Bad_Guy"
-#define WLAN_SSID "B@d_Guy"
-#define WLAN_PASS "balaji6120"
+#define AIO_SERVERPORT <PORT>
+#define AIO_KEY "<KEY>"
+#define AIO_USERNAME "<USERNAME>"
+#define WLAN_SSID "<SSID>"
+#define WLAN_PASS "<PASSWORD>"
 WiFiClient client;
 Adafruit_MQTT_Client mqtt(&client,AIO_SERVER,AIO_SERVERPORT,AIO_USERNAME,AIO_KEY);
 Adafruit_MQTT_Subscribe CarStatus = Adafruit_MQTT_Subscribe(&mqtt,AIO_USERNAME "/feeds/CarStatus");
